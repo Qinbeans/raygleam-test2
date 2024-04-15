@@ -4,3 +4,6 @@
 /priv/*.dll
 *.beam
 .DS_Store
+*.ez
+/build
+erl_crash.dump

@@ -12,11 +12,14 @@ erl
 
 ```erlang
 c(raylib).
-raylib:init_window(800, 600, <<"Hello, world">>);
+raylib:init_window(800, 600, <<"Hello, world">>).
 ```
 
-| OS      | Status | Notes                                        |
-| ------- | ------ | -------------------------------------------- |
-| macOS   | [ ]    | Compiles and runs but no window appears      |
-| Linux   | [x]    | The C version works, so this should work too |
-| Windows | [x]    | This was tested and works                    |
+| OS      | Status | Notes                                   |
+| ------- | ------ | --------------------------------------- |
+| macOS   | ❌     | Compiles and runs but no window appears |
+| Linux   | ✔️     | Tested on WSL                           |
+| Windows | ✔️     | This was tested and works               |
+
+<img src="./docs/windows.png" width="50%" height="50%" />
+<img src="./docs/linux.png" width="50%" height="50%" />
