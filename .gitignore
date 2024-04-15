@@ -1,0 +1,6 @@
+/target
+/Cargo.lock
+/priv/*.so
+/priv/*.dll
+*.beam
+.DS_Store

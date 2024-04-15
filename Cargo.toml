@@ -1,0 +1,14 @@
+[package]
+name = "raygleam"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+crate-type = ["dylib"]
+path = "src-rs/lib.rs"
+name = "raygleam"
+
+[dependencies]
+rustler = "0.32.1"
+raylib = { git = "https://github.com/bitten2up/raylib-rs.git", branch = "5.0.0" }
