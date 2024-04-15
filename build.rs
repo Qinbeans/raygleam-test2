@@ -38,21 +38,21 @@ fn main() {
             let new_dylib_path = priv_dir.join("raygleam.so");
 
             if dylib_path.exists() {
-                fs::rename(&dylib_path, &new_dylib_path).expect("Could not rename dylib");
+                fs::copy(&dylib_path, &new_dylib_path).expect("Could not copy dylib");
             }
         } else if target == "linux" {
             let so_path = target_dir.join("libraygleam.so");
             let new_so_path = priv_dir.join("raygleam.so");
 
             if so_path.exists() {
-                fs::rename(&so_path, &new_so_path).expect("Could not rename so");
+                fs::copy(&so_path, &new_so_path).expect("Could not copy so");
             }
         } else if target == "windows" {
             let dll_path = target_dir.join("raygleam.dll");
             let new_dll_path = priv_dir.join("raygleam.dll");
 
             if dll_path.exists() {
-                fs::rename(&dll_path, &new_dll_path).expect("Could not rename dll");
+                fs::copy(&dll_path, &new_dll_path).expect("Could not copy dll");
             }
         }
     }
